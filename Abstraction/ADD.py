@@ -1,3 +1,4 @@
+# Abstraction Helper Function That are hidden from user
 def add():
     num1 = int(input("Enter the 1st number :")) 
     num2 = int(input("Enter the 2nd number :"))
