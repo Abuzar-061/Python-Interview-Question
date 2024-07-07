@@ -15,9 +15,24 @@ new_inv = {
 # Combine multiple Dictionary into single dictionary 
 
 
-total_inv = {
-    K : inv.get(K,0) + new_inv.get(K,0)
-    for K in set(inv | new_inv)
-}
+from collections import defaultdict
 
-print(total_inv)
+# List of dictionaries to aggregate
+dicts = [
+    {'a': 1, 'b': 2},
+    {'a': 3, 'c': 4},
+    {'a': 5, 'b': 6, 'c': 7}
+]
+
+# Create a defaultdict of lists
+aggregated_dict = defaultdict(list)
+
+# Aggregate the dictionaries
+for d in dicts:
+    for key, value in d.items():
+        aggregated_dict[key].append(value)
+
+# Convert the defaultdict to a regular dictionary (optional)
+aggregated_dict = dict(aggregated_dict)
+
+print(aggregated_dict)
