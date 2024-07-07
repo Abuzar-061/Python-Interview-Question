@@ -12,6 +12,7 @@ new_inv = {
 # inv.update(new_inv)
 # print(inv) # This method ignore the duplicate value and add the value that is not in the dictionary 
 
+# Combine multiple Dictionary into single dictionary 
 
 
 total_inv = {
