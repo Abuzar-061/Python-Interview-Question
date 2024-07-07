@@ -11,4 +11,13 @@ reversed_array = ar(new_array)
 
 print(reversed_array)
 
+# Method 2 
 
+
+def aarray(array):
+    return array[::-1]
+
+
+reverse  = aarray([1,2,3,4,5,6])
+
+print(reverse)

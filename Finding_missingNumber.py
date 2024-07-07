@@ -4,7 +4,7 @@
 
 def find_missing_number(numbers):
     n = 8  # Since we know the numbers are from 1 to 8
-    total_sum = n * (n + 1) // 2  # Sum of first n natural numbers
+    total_sum = n * (n + 1) // 2  # Sum of n natural numbers
     actual_sum = sum(numbers)
     return total_sum - actual_sum
 
