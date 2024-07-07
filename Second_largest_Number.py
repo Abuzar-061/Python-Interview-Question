@@ -20,6 +20,4 @@ sorted(set(number))
 
 seclargeindex = int(len(number)) - 2
 
-print(seclargeindex)
-
-print(number[seclargeindex])
+print("Second Largest number is :", number[seclargeindex])
