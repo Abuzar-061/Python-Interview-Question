@@ -1,8 +1,9 @@
-secret_word = "zeyad"
-while True:
-    guess = input("Enter a guess: ")
-    if guess == secret_word:
-        print("Valid Guess")
-        break
-    else:
-        print("Invalid guess, please try again.")
+class Car:
+    def __init__(self):
+        self.brand = "1992"
+        self.model = "Corolla"
+    def car(self):
+        return f"Brand: {self.brand} and Model: {self.model}"
+
+O1 = Car()
+print(O1.car())
