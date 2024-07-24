@@ -25,3 +25,16 @@ for i in arr:
 
 print(even_arr)
 print(odd_arr)
+
+print("Flatter More Complex Nested Array")
+
+arrr = [1,2,[3,4],5]
+new_arrayy = []
+
+for i in arrr:
+    if isinstance(i,list):
+        for j in i:
+            new_arrayy.append(j)
+    else:
+        new_arrayy.append(i)
+print(new_arrayy)
