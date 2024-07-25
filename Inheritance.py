@@ -6,7 +6,6 @@
 # Multiple Inheritance: A class inherits from multiple superclasses (not directly supported in many languages, like Java).
 # Multilevel Inheritance: A class inherits from another class, which itself inherits from another class.
 # Hierarchical Inheritance: Multiple classes inherit from a single superclass.
-# Hybrid Inheritance: A combination of multiple types of inheritance.
 
 
 
@@ -64,24 +63,23 @@ d.bark() # Output: Dog barks
 
 
 
-##################################################### Hybrid Inheritance
+##################################################### Hierarichal Inheritance
 
-class A:
-    def method_A(self):
-        print("Class A method")
+class Animal:
+    def eat(self):
+        print("Animal eats")
 
-class B(A):
-    def method_B(self):
-        print("Class B method")
+class Dog(Animal):
+    def bark(self):
+        print("Dog barks")
 
-class C(A):
-    def method_C(self):
-        print("Class C method")
+class Cat(Animal):
+    def meow(self):
+        print("Cat meows")
 
-class D(B, C):
-    pass
-
-d = D()
-d.method_A()  # Output: Class A method
-d.method_B()  # Output: Class B method
-d.method_C()  # Output: Class C method
+d = Dog()
+c = Cat()
+d.eat()  # Output: Animal eats
+d.bark() # Output: Dog barks
+c.eat()  # Output: Animal eats
+c.meow() # Output: Cat meows
