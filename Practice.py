@@ -1,9 +1,8 @@
-class Car:
-    def __init__(self):
-        self.brand = "1992"
-        self.model = "Corolla"
-    def car(self):
-        return f"Brand: {self.brand} and Model: {self.model}"
+value = input("Enter the String Value: ")
+output = []
+for i in value:
 
-O1 = Car()
-print(O1.car())
+    if i not in output:
+        output.append(i)
+outputs = ' '.join(output)
+print(outputs) 
