@@ -1,12 +1,11 @@
+list =  [1,2,3,4,5]
 
-def flatten(lst):
-    flat_list = []
-    for item in lst:
-        if isinstance(item, int):
-            flat_list.append(item)
-        else:
-            flat_list.extend(flatten(item))
-    return flat_list
+last_index = int(len(list)) - 1
 
-nestedlist = [1, 2, 3, [4, 5], [[6, 7]]]
-print(flatten(nestedlist))
+i = 0
+j = last_index
+
+
+list[i] , list[j] = list[j] , list[i]
+
+print(list)
