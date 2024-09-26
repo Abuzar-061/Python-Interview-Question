@@ -3,10 +3,11 @@ name = [
     "Sameel", 
     "Faheem"
 ]
-
+# length = 0
 for names in name:
+    # length += 1
     print(f'{names} : {len(names)}')
-
+# print(length)
 print("... Dictionary Part ...")
 
 dictionary = {
