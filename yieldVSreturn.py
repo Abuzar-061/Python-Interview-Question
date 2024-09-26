@@ -1,3 +1,6 @@
+# return sends back the final result and stops the function.
+# yield sends one result at a time and pauses the function so it can continue later.
+
 def ret():
     return [1,2,3]
 
