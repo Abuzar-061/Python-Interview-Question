@@ -52,3 +52,27 @@ def flatten(lst):
 
 nestedlist = [1, 2, 3, [4, 5], [[6, 7]]]
 print(flatten(nestedlist))
+
+# Another Flatten array with all elements  inside it 1d , 2d ,3d and find min and max in the flatten array
+
+def flatten(lst):
+    result = []
+    for i in lst:
+        if isinstance(i, int):
+            result.append(i)
+        elif isinstance(i, list):
+            result.extend(flatten(i))
+    return result
+
+def min_max(lst):
+    choose = input("Find min or max: ")
+    flatten_list = flatten(lst)
+    if choose == "min":
+        return min(flatten_list)
+    elif choose == "max":
+        return max(flatten_list)
+    
+lst = [1,2,3,4,[5,6,7],[[8,9]]]
+print(flatten(lst))
+print(min_max(lst))
+

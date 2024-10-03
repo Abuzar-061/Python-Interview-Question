@@ -1,0 +1,2 @@
+# ctrl + shift + p  to open command palette and click the rest client send request 
+GET http://api.halsaplus.com/chat/Tell me the symptoms of cold? HTTP/1.1

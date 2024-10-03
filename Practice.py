@@ -1,14 +1,13 @@
-import random
+import winsound
+import pyttsx3
+import keyboard
 
-score = 0
+speak = pyttsx3.init()
+
+speak.say("Bomb Has been Planted Abuzar Run !")
+speak.runAndWait()
+print("Press ESC to exit")
 while True:
-    guess_number =  random.randint(1,6)
-    print(guess_number)
-    your_number = int(input("Guess the number b/w 1-6:"))
-    if your_number == guess_number:
-        score += 1
-        print("Correct! You Win.")
-        print(f"Score: {score}")
-    else:
-        print("You Lose!")
+    winsound.Beep(1000,500)
+    if keyboard.is_pressed('esc'):
         break
